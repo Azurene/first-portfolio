@@ -49,3 +49,8 @@ body {
 section {
     background-color: var(--secondary-color);
 }
+
+.article-start {
+    border-bottom:rgba(255, 255, 255, 1) 2px solid;
+    width: 50%;
+}

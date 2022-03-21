@@ -1,9 +1,10 @@
 :root {
-    --background-color: #C4C4C4;
-    --primary-color: #123956;
-    --shadow-color: #000;
-    --light-accent: #fff;
-    --dark-accent: #000;
+    --background-color: rgb(196, 196, 196);
+    --primary-color: rgb(18, 57, 86);
+    --primary-color-translucent: rgba(18, 56, 86, 0.555);
+    --shadow-color: rgb(0, 0, 0);
+    --light-accent: rgb(255, 255, 255);
+    --dark-accent: rgb(0, 0, 0);
 }
 
 * {
@@ -17,7 +18,12 @@ body {
 }
 
 .shadow {
-    text-shadow: 0 4px 4px var(--shadow-color);
+    text-shadow: 4px 4px 4px var(--shadow-color);
+}
+
+.headings {
+    font-size: 40px;
+    font-family: 'Sarpanch', sans-serif;
 }
 /* Navigation Style Start */
 .navigation {
@@ -33,14 +39,21 @@ body {
     top: 0;
 }
 
+.navigation h1 {
+    font-size: 50px;
+}
+
 .navigation ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navigation ul li {
     list-style: none;
-    flex: 0 0 40%;
+    justify-content: center;
+    margin: 7px;
+    font-size: 21px;
 }
 
 .navigation ul li a {
@@ -51,8 +64,6 @@ body {
 
 /* Section Styling Start */
 section {
-    border: 1px var(--light-accent) solid;
-    box-shadow: var(--shadow-color) 0 4px 4px;
     margin-bottom: 10px;
     display: flex;
 }
@@ -83,6 +94,7 @@ section {
     font-family: 'Sarpanch', sans-serif;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -91,20 +103,43 @@ section {
     display: flex;
 }
 .sample {
-    flex: 1 0 30%;
     text-align: center;
     margin: 10px;
-    border: var(--light-accent) 1px solid;
-    width: 30%;
-    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sample a {
+    text-decoration: none;
 }
 
 .sample:hover {
-    border-bottom: var(--primary-color) 5px solid;
-    box-shadow: var(--shadow-color) 0 4px 4px;
+    background-color: var(--primary-color-translucent);
 }
 
-.sample img {
-    width: 100%;
-    
+/* Projects End */
+
+/* Contact Start */
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact ul li {
+    list-style: none;
+}
+/* Contact End */
+
+/* Footer Start */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-accent);
+    padding: 5px;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+footer h3 {
+    width: 50;
+    padding: 0 auto;
 }

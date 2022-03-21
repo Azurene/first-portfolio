@@ -20,6 +20,11 @@ body {
 .shadow {
     text-shadow: 4px 4px 4px var(--shadow-color);
 }
+
+.headings {
+    font-size: 40px;
+    font-family: 'Sarpanch', sans-serif;
+}
 /* Navigation Style Start */
 .navigation {
     background-color: var(--primary-color);
@@ -83,40 +88,31 @@ section {
     align-items: center;
 }
 
-.about-me h2 {
-    font-size: 40px;
-}
 /* Projects Start */
 .projects {
     font-family: 'Sarpanch', sans-serif;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     flex-wrap: wrap;
-}
-
-.projects h2 {
-    
+    align-items: center;
 }
 
 .sample {
-    flex: 1 0 30%;
     text-align: center;
     margin: 10px;
-    width: 30%;
-    min-height: 300px;
-    min-width: 500px;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+}
+
+.sample a {
+    text-decoration: none;
 }
 
 .sample:hover {
     background-color: var(--primary-color-translucent);
 }
 
-.sample-image {
-    background-image: url(../images/run-buddy.png);
-    background-position: 20% 10%;
-    background-blend-mode: darken;
-}
 /* Projects End */
 
 /* Contact Start */
@@ -125,11 +121,18 @@ section {
     justify-content: center;
     flex-direction: column;
 }
+
+.contact ul li {
+    list-style: none;
+}
 /* Contact End */
 
 /* Footer Start */
 footer {
     background-color: var(--primary-color);
+    color: var(--light-accent);
+    padding: 5px;
+    font-family: 'Sarpanch', sans-serif;
 }
 
 footer h3 {

@@ -117,6 +117,10 @@ section {
     background-color: var(--primary-color-translucent);
 }
 
+.sample img {
+    width: 1000px;
+    height: 500px;
+}
 /* Projects End */
 
 /* Contact Start */
